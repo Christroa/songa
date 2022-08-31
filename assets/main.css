@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto;
+  text-decoration: none;
+  list-style-type: none;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card {
+  border-radius: 30px;
+  box-shadow: 0px 0 15px rgba(0, 0, 0, 0.25);
+}
+
+input:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.drop:hover .dropdown {
+  display: block;
+}
+
+main {
+  padding: 80px 60px;
+  background: #f2eef1;
+}
+main section {
+  margin-bottom: 82px;
+}
+main section.hero {
+  display: flex;
+  gap: 10px;
+}
+main section.hero .sidebar {
+  height: 720px;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 240px;
+  background: #fff;
+  padding: 8px 5px;
+  display: grid;
+  gap: 30px;
+}
+main section.hero .sidebar > span {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+main section.hero .sidebar > span i {
+  cursor: pointer;
+}
+main section.hero .sidebar > span h2 {
+  display: inline-block;
+}
+main section.hero .sidebar ul li {
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+main section.hero .sidebar ul li:hover {
+  background-color: grey;
+  border-radius: 5px;
+}
+main section.hero .slideItems {
+  flex: 4;
+  min-width: 0;
+}
+main section.hero .slideItems .swiper {
+  border-radius: 10px;
+}
+main section.hero .slideItems .swiper.heroslide {
+  height: 400px;
+}
+main section.hero .slideItems .swiper.heroslide .swiper-pagination .swiper-pagination-bullet {
+  background: #fff;
+  opacity: 1;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+main section.hero .slideItems .swiper.heroslide .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background: #f39200;
+}
+main section.hero .slideItems .swiper.heroslide .swiper-button-prev,
+main section.hero .slideItems .swiper.heroslide .swiper-button-next {
+  background: rgba(0, 0, 0, 0.412);
+  border-radius: 5px;
+}
+main section.hero .slideItems .swiper.heroslide .swiper-button-prev::after,
+main section.hero .slideItems .swiper.heroslide .swiper-button-next::after {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+main section.hero .slideItems .swiper.heroslide img {
+  width: 100%;
+}
+main section.hero .slideItems .swiper.topselling {
+  background: linear-gradient(99.56deg, #f39200 -4.69%, #96146a 110.68%);
+  height: 302.2727272727px;
+  margin-top: 25px;
+  padding: 10px 20px 20px 20px;
+}
+main section.hero .slideItems .swiper.topselling h2 {
+  padding-left: 42px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  color: #fff;
+}
+main section.hero .slideItems .swiper.topselling .swiper-button-prev,
+main section.hero .slideItems .swiper.topselling .swiper-button-next {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+main section.hero .slideItems .swiper.topselling .swiper-button-prev::after,
+main section.hero .slideItems .swiper.topselling .swiper-button-next::after {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+main section.hero .slideItems .swiper.topselling .swiper-wrapper {
+  height: calc(100% - 30px);
+}
+main section.hero .slideItems .swiper.topselling .swiper-wrapper .swiper-slide {
+  background: #fff;
+  border-radius: 30px;
+}
+main section.hero .slideItems .swiper.topselling .swiper-wrapper .swiper-slide .card {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+main section.hero .slideItems .swiper.topselling .swiper-wrapper .swiper-slide .card .img img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border-radius: 30px;
+}
+main section.hero .slideItems .swiper.topselling .swiper-wrapper .swiper-slide .card .text {
+  text-align: center;
+}
+main section.hero .slideItems .swiper.topselling .swiper-wrapper .swiper-slide .card .text b,
+main section.hero .slideItems .swiper.topselling .swiper-wrapper .swiper-slide .card .text span {
+  display: block;
+}
+main section.hero .slideItems .swiper.topselling .swiper-wrapper .swiper-slide .card .text b:first-child,
+main section.hero .slideItems .swiper.topselling .swiper-wrapper .swiper-slide .card .text span:first-child {
+  margin: 5px 0;
+}
+main section.flashSales .flashSale {
+  height: 302.2727272727px;
+  margin-top: 25px;
+  padding: 10px 20px 20px 20px;
+}
+main section.flashSales .flashSale img {
+  display: none;
+}
+main section.flashSales .flashSale .title {
+  display: flex;
+  justify-content: space-between;
+}
+main section.flashSales .flashSale h2 {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  color: #000;
+}
+main section.flashSales .flashSale .swiper-button-prev,
+main section.flashSales .flashSale .swiper-button-next {
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+main section.flashSales .flashSale .swiper-button-prev::after,
+main section.flashSales .flashSale .swiper-button-next::after {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+}
+main section.flashSales .flashSale .swiper-wrapper {
+  height: calc(100% - 30px);
+}
+main section.flashSales .flashSale .swiper-wrapper .swiper-slide {
+  background: #fff;
+  border-radius: 30px;
+}
+main section.flashSales .flashSale .swiper-wrapper .swiper-slide .card {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+main section.flashSales .flashSale .swiper-wrapper .swiper-slide .card .img img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border-radius: 30px;
+}
+main section.flashSales .flashSale .swiper-wrapper .swiper-slide .card .text {
+  text-align: center;
+}
+main section.flashSales .flashSale .swiper-wrapper .swiper-slide .card .text b,
+main section.flashSales .flashSale .swiper-wrapper .swiper-slide .card .text span {
+  display: block;
+}
+main section.flashSales .flashSale .swiper-wrapper .swiper-slide .card .text b:first-child,
+main section.flashSales .flashSale .swiper-wrapper .swiper-slide .card .text span:first-child {
+  margin: 5px 0;
+}
+main section.productAround .productGrid {
+  margin-top: 25px;
+  padding: 10px 20px 20px 20px;
+}
+main section.productAround .productGrid img {
+  display: none;
+}
+main section.productAround .productGrid .title {
+  display: flex;
+  justify-content: space-between;
+}
+main section.productAround .productGrid h2 {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  color: #000;
+}
+main section.productAround .productGrid .gridWrapper {
+  height: calc(100% - 30px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+main section.productAround .productGrid .gridWrapper .gridItem {
+  background: #fff;
+  border-radius: 30px;
+}
+main section.productAround .productGrid .gridWrapper .gridItem .card {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+main section.productAround .productGrid .gridWrapper .gridItem .card .img img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border-radius: 30px;
+}
+main section.productAround .productGrid .gridWrapper .gridItem .card .text {
+  text-align: center;
+}
+main section.productAround .productGrid .gridWrapper .gridItem .card .text b,
+main section.productAround .productGrid .gridWrapper .gridItem .card .text span {
+  display: block;
+}
+main section.productAround .productGrid .gridWrapper .gridItem .card .text b:first-child,
+main section.productAround .productGrid .gridWrapper .gridItem .card .text span:first-child {
+  margin: 5px 0;
+}
+main section.popularProduct .popularGrid {
+  margin-top: 25px;
+  padding: 10px 20px 20px 20px;
+}
+main section.popularProduct .popularGrid img {
+  display: none;
+}
+main section.popularProduct .popularGrid .title {
+  display: flex;
+  justify-content: space-between;
+}
+main section.popularProduct .popularGrid h2 {
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  color: #000;
+}
+main section.popularProduct .popularGrid .gridWrapper {
+  height: calc(100% - 30px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+}
+main section.popularProduct .popularGrid .gridWrapper .gridItem {
+  background: #fff;
+  border-radius: 30px;
+  height: 250px;
+}
+main section.popularProduct .popularGrid .gridWrapper .gridItem .card {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+main section.popularProduct .popularGrid .gridWrapper .gridItem .card .img img {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  border-radius: 30px;
+}
+main section.popularProduct .popularGrid .gridWrapper .gridItem .card .text {
+  text-align: center;
+}
+main section.popularProduct .popularGrid .gridWrapper .gridItem .card .text b,
+main section.popularProduct .popularGrid .gridWrapper .gridItem .card .text span {
+  display: block;
+}
+main section.popularProduct .popularGrid .gridWrapper .gridItem .card .text b:first-child,
+main section.popularProduct .popularGrid .gridWrapper .gridItem .card .text span:first-child {
+  margin: 5px 0;
+}/*# sourceMappingURL=main.css.map */
