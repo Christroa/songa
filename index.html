@@ -19,7 +19,7 @@
     />
   </head>
   <body>
-    <!-- <header>
+    <header>
       <nav class="bg-white">
         <div class="logo">
           <img src="./assets/imgs/logo/logoDesk.png" alt="" />
@@ -74,7 +74,7 @@
           <i class="fa fa-heart" aria-hidden="true"></i>
           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
         </span>
-      </nav> -->
+      </nav>
     </header>
     <main>
       <section class="hero">
@@ -361,53 +361,15 @@
             </div>
           </div>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
       </section>
     </main>
-    <script src="./main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./main.js"></script>
 
     <!-- Initialize Swiper -->
     <script>
-      const swiper = new Swiper(".heroslide", {
-        slidesPerView: 'auto',
-        spaceBetween: 30,
-        freeMode: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        autoplay: true,
-        loop: true,
-      });
-      const swiper1 = new Swiper(".topselling", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        freeMode: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        loop: true,
-        autoplay: true,
-      });
-      const swiper3 = new Swiper(".flashSale", {
-        slidesPerView: 5,
-        spaceBetween: 30,
-        freeMode: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        loop: true,
-        autoplay: true,
-      });
+      
     </script>    
   </body>
 </html>
