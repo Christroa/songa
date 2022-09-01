@@ -362,6 +362,9 @@ main {
 
 //Tablet View Responsive Layout
 @media screen and (max-width: 768px) {
+  main {
+    padding: 30px;
+  }
   .sidebar {
     display: none !important;
     height: 600px !important;

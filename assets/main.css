@@ -311,6 +311,9 @@ main section.popularProduct .popularGrid .gridWrapper .gridItem .card .text span
 }
 
 @media screen and (max-width: 768px) {
+  main {
+    padding: 30px;
+  }
   .sidebar {
     display: none !important;
     height: 600px !important;
