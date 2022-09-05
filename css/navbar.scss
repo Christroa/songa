@@ -1,0 +1,108 @@
+.dropdown-toggle {
+  outline: 0;
+}
+.text-small {
+  font-size: 90%;
+}
+a {
+  color: #333 !important;
+}
+input {
+  width: 100%;
+  padding: 12px 40px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+form {
+  position: relative;
+}
+form i {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  background-color: #7f2885;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+header {
+  background: #fff;
+  ul.navv {
+    .user-img {
+      display: none;
+    }
+  }
+  .nav-item {
+    position: relative;
+  }
+}
+@media screen and (max-width: 575px) {
+  header {
+    padding: 0;
+    background: linear-gradient(99.56deg, #f39200 -4.69%, #96146a 110.68%);
+    .navigations {
+      margin: 0 !important;
+      padding: 0 !important;
+      .container {
+        padding: 0;
+        > div {
+          justify-content: space-evenly !important;
+        }
+      }
+    }
+  }
+  ul.navv {
+    justify-content: flex-start !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    border-radius: 0 15px 15px 0;
+    height: 100vh;
+    background: #212121;
+    margin: 0 !important;
+    justify-self: start !important;
+    align-items: flex-start;
+    max-width: 70%;
+    z-index: 1;
+
+    .user-img {
+      margin: 0 auto;
+      display: block;
+      > span {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: #fff;
+        border-radius: 50%;
+      }
+      p {
+        color: #fff;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.2rem;
+      }
+    }
+    .nav-item {
+      //   display: inline !important;
+      border-radius: 0 5px 5px 0;
+      margin: 1px 0;
+      padding: 0 20px !important;
+      width: 100%;
+      &:hover,
+      &:first {
+        background: rgba(255, 255, 255, 0.15);
+      }
+      a {
+        color: #fff !important;
+      }
+
+      .dropdown-item {
+        color: #333 !important;
+      }
+    }
+  }
+}

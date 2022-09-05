@@ -1,0 +1,261 @@
+html,
+body {
+  height: 100%;
+  font-family: "Cairo", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  background: rgb(243, 243, 243);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  color: #111111;
+  font-weight: 400;
+  font-family: "Cairo", sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 18px;
+}
+
+h6 {
+  font-size: 16px;
+}
+
+p {
+  font-size: 16px;
+  font-family: "Cairo", sans-serif;
+  color: #6f6f6f;
+  font-weight: 400;
+  line-height: 26px;
+  margin: 0 0 15px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+input:focus,
+select:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+a {
+  color: #000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+  color: purple;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+section.hero .category {
+  padding: 0;
+  border-radius: 15px;
+}
+section.hero .category .catetoryTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+section.hero .category .catetoryTitle i {
+  color: #000;
+  font-weight: 700;
+  font-size: 30px;
+  cursor: pointer;
+}
+section.hero .category .category-item ul {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+section.hero .category .category-item ul li {
+  padding: 2px 20px;
+  font-size: 0.7rem;
+}
+section.hero .category .category-item ul li:hover {
+  background: #fff;
+}
+section.hero .category .category-item ul li i {
+  padding: 5px 10px 0;
+}
+section.flash .title,
+section.flash .countDown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.flash .title .countDown,
+section.flash .countDown .countDown {
+  gap: 5px;
+}
+section.flash .title .countDown i,
+section.flash .countDown .countDown i {
+  background: #000;
+  padding: 5px;
+  color: #fff;
+  border-radius: 5px;
+}
+section.flash .title a,
+section.flash .countDown a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+section.stores .title, section.popular .title {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+section.stores .title .nav a, section.popular .title .nav a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  position: relative;
+}
+section.stores .title .nav a:hover::after, section.popular .title .nav a:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -3px;
+  left: 0;
+  background: coral;
+}
+section.stores .title .nav :first-child:after, section.popular .title .nav :first-child:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -3px;
+  left: 0;
+  background: coral;
+}
+section.stores .title .nav :last-child, section.popular .title .nav :last-child {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .category {
+    display: none;
+  }
+}
+@media screen and (max-width: 580px) {
+  .flash .title h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .flash .title .countDown i {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  .flash .title {
+    flex-wrap: wrap;
+    justify-content: center !important;
+    gap: 15px;
+  }
+  .flash .title h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .flash .title .countDown i {
+    font-size: 0.8rem;
+    background: transparent !important;
+    color: #000 !important;
+    font-weight: 600;
+  }
+}
+.owl-carousel {
+  position: relative;
+}
+.owl-carousel button.owl-prev,
+.owl-carousel button.owl-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: #fff;
+}
+.owl-carousel button.owl-prev.owl-prev,
+.owl-carousel button.owl-next.owl-prev {
+  padding: 10px !important;
+  left: 0;
+}
+.owl-carousel button.owl-prev.owl-next,
+.owl-carousel button.owl-next.owl-next {
+  right: 0;
+}
+.owl-carousel button.owl-prev span,
+.owl-carousel button.owl-next span {
+  padding: 30px 10px !important;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.owl-carousel .owl-dots {
+  position: absolute;
+  display: none;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.subSlide .owl-dots {
+  display: none !important;
+}
+.subSlide .card {
+  position: relative;
+}
+.subSlide .card .card-body {
+  bottom: 0;
+  background: #fff;
+  width: 100%;
+}
+.subSlide .card .card-body .card-title {
+  text-overflow: ellipsis; /* will make [...] at the end */
+  width: 100%; /* change to your preferences */
+  white-space: nowrap; /* paragraph to one line */
+  overflow: hidden; /* older browsers */
+}
+.subSlide .card .card-body a {
+  text-decoration: none;
+  color: #333;
+}/*# sourceMappingURL=style.css.map */
