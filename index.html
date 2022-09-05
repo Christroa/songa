@@ -5,371 +5,1015 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <!-- <link rel="stylesheet" href="./assets/bootstrap/bootstrap.css" /> -->
-    <link
-      rel="stylesheet"
-      href="./assets/faicon/css/all.css
-    "
-    />
-    <link rel="stylesheet" href="./assets/main.css" />
-    <link rel="stylesheet" href="./assets/navbar.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./fa/css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./bootstrap/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./bootstrap/owl.theme.default.min.css" />
+    <style></style>
   </head>
   <body>
-    <header>
-      <nav class="bg-white">
-        <div class="logo">
-          <img src="./assets/imgs/logo/logoDesk.png" alt="" />
-        </div>
-        <div class="nav-items">
-          <ul>
-            <li>
-              <a href="#"
-                ><i class="fa fa-location-arrow" aria-hidden="true"></i> User
-                Location</a
-              >
-            </li>
-            <li class="drop">
-              Sell on songa <i class="fa fa-angle-down" aria-hidden="true"></i>
-              <ul class="dropdown">
-                <li><a href="#">Supplier Login</a></li>
-                <li><a href="#">Register as a Supplier</a></li>
-              </ul>
-            </li>
-            <li class="drop">
-              Help <i class="fa fa-angle-down" aria-hidden="true"></i>
-              <ul class="dropdown">
-                <li><a href="#">Supplier Login</a></li>
-                <li><a href="#">Register as a Supplier</a></li>
-              </ul>
-            </li>
-            <li class="drop">
-              Language: ENG <i class="fa fa-angle-down" aria-hidden="true"></i>
-              <ul class="dropdown">
-                <li><a href="#">Supplier Login</a></li>
-                <li><a href="#">Register as a Supplier</a></li>
-              </ul>
-            </li>
-            <li class="drop">
-              <i class="fa fa-user" aria-hidden="true"></i> Account
-              <i class="fa fa-angle-down" aria-hidden="true"></i>
-              <ul class="dropdown">
-                <li><a href="#">Supplier Login</a></li>
-                <li><a href="#">Register as a Supplier</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <form class="search">
-          <input
-            type="text"
-            placeholder="Search brands, Products, Categories"
-          />
-          <button><i class="fa fa-search" aria-hidden="true"></i></button>
-        </form>
-        <span class="btns">
-          <i class="fa fa-heart" aria-hidden="true"></i>
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        </span>
-      </nav>
+    <header
+      style="height: 150px"
+      class="text-center bg-dark text-warning d-flex align-items-center justify-content-center"
+    >
+      <h2>NAvbar</h2>
     </header>
+
     <main>
-      <section class="hero">
-        <div class="sidebar">
-            <span><i class="fa fa-bars sidemenutoggle" aria-hidden="true"></i> <h2 class="sidemenuText">Catergories</h2></span>
+      <section class="hero row mx-md- mx-md-4 mx-sm-2 mt-3">
+        <div class="category bg-white col-md-3">
+          <div class="catetoryTitle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+            <h2>Categories</h2>
+          </div>
+          <div class="category-item">
             <ul>
-                <li><span><i class="fa fa-cab" aria-hidden="true"></i></span> <span class="sidemenuText">Clothing, Shoes & Jewelry</span></li>
-                <li><span><i class="fa fa-book" aria-hidden="true"></i></span> <span class="sidemenuText">Books</span></li>
-                <li><span><i class="fa fa-book" aria-hidden="true"></i></span> <span class="sidemenuText">Luxury Beauty</span></li>
-                <li><span><i class="fa fa-book" aria-hidden="true"></i></span> <span class="sidemenuText">Phones & Telecommunications</span></li>
-                <li><span><i class="fa fa-book" aria-hidden="true"></i></span> <span class="sidemenuText">Consumer Electronics</span></li>
-                <li><span><i class="fa fa-book" aria-hidden="true"></i></span> <span class="sidemenuText">Jewelry & Watches</span></li>
-                <li><span><i class="fa fa-book" aria-hidden="true"></i></span> <span class="sidemenuText">Home & Business Services</span></li>
-                <li><span><i class="fa fa-book" aria-hidden="true"></i></span> <span class="sidemenuText">Pet Supplies</span></li>
-                <li><span><i class="fa fa-book" aria-hidden="true"></i></span> <span class="sidemenuText">Cds & Personal Care</span></li>
-                <li><span><i class="fa fa-book" aria-hidden="true"></i></span> <span class="sidemenuText">Beauty & Personal Care</span></li>
-                <li><span><i class="fa fa-book" aria-hidden="true"></i></span> <span class="sidemenuText">Grocery & Goumet Food</span></li>
-                <li><span><i class="fa fa-book" aria-hidden="true"></i></span> <span class="sidemenuText">Toys & Games</span></li>
-                <li><span><i class="fa fa-book" aria-hidden="true"></i></span> <span class="sidemenuText">Poultry</span></li>
-                <li><span><i class="fa fa-book" aria-hidden="true"></i></span> <span class="sidemenuText">Sports & Outdoor</span></li>
-                <li><span><i class="fa fa-book" aria-hidden="true"></i></span> <span class="sidemenuText">Vehicles</span></li>
-                <li><span><i class="fa fa-book" aria-hidden="true"></i></span> <span class="sidemenuText">Others</span></li>
-            </span></ul>
-        </div>
-        <div class="slideItems">
-          <div class="swiper heroslide">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide"><img src="./assets/imgs/OIP.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="./assets/imgs/R.jpg" alt=""></div>
-              <div class="swiper-slide"><img src="./assets/imgs/OIP.jpg" alt=""></div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><span>Phones</span>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><span>Phones</span>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><span>Phones</span>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><span>Phones</span>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><span>Phones</span>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><span>Phones</span>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><span>Phones</span>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><span>Phones</span>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><span>Phones</span>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><span>Phones</span>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><span>Phones</span>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><span>Phones</span>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><span>Phones</span>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><span>Phones</span>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><span>Phones</span>
+              </li>
+              <li>
+                <i class="fa fa-phone" aria-hidden="true"></i
+                ><span>Phones</span>
+              </li>
+            </ul>
           </div>
-          <div class="swiper topselling">
-            <h2>Top Selling Items</h2>
-            <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="topItem card">
-                <div class="img">
-                  <img src="./assets/imgs/R.jpg" alt="">
+        </div>
+
+        <div class="hero-item col-lg-9 col-md-9">
+          <div class="heroImg m-2">
+            <div class="owl-carousel mainSlide owl-theme">
+              <div class="item">
+                <img
+                  src="https://ng.jumia.is/cms/0-5-brand-festival/2022/teasing_712x384.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="item"><img src="./imgs/banner.jpg" alt="" /></div>
+              <div class="item"><img src="./imgs/banner.jpg" alt="" /></div>
+              <div class="item"><img src="./imgs/banner.jpg" alt="" /></div>
+              <div class="item"><img src="./imgs/banner.jpg" alt="" /></div>
+              <div class="item"><img src="./imgs/banner.jpg" alt="" /></div>
+              <div class="item"><img src="./imgs/banner.jpg" alt="" /></div>
+              <div class="item"><img src="./imgs/banner.jpg" alt="" /></div>
+              <div class="item"><img src="./imgs/banner.jpg" alt="" /></div>
+              <div class="item"><img src="./imgs/banner.jpg" alt="" /></div>
+            </div>
+          </div>
+          <div class="heroImg m-2">
+            <div class="owl-carousel subSlide owl-theme">
+              <div class="item">
+                <div class="card">
+                  <img
+                    src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/59/713347/1.jpg?3619"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fingerprint Touch Bluetooth Headset
+                    </h5>
+                    <p class="card-text">
+                      <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                    </p>
+                    <a href="#" class="">$1000</a>
+                    <a href="#" class="" style="text-decoration: line-through"
+                      >$19,000</a
+                    >
+                  </div>
                 </div>
-                <div class="text"><b>111.67</b><span>$233</span></div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <img
+                    src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/53/122776/1.jpg?7527"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fingerprint Touch Bluetooth Headset
+                    </h5>
+                    <p class="card-text">
+                      <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                    </p>
+                    <a href="#" class="">$1000</a>
+                    <a href="#" class="" style="text-decoration: line-through"
+                      >$19,000</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <img
+                    src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/41/053149/1.jpg?1910"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fingerprint Touch Bluetooth Headset
+                    </h5>
+                    <p class="card-text">
+                      <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                    </p>
+                    <a href="#" class="">$1000</a>
+                    <a href="#" class="" style="text-decoration: line-through"
+                      >$19,000</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <img
+                    src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/59/713347/1.jpg?3619"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fingerprint Touch Bluetooth Headset
+                    </h5>
+                    <p class="card-text">
+                      <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                    </p>
+                    <a href="#" class="">$1000</a>
+                    <a href="#" class="" style="text-decoration: line-through"
+                      >$19,000</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <img
+                    src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/59/713347/1.jpg?3619"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fingerprint Touch Bluetooth Headset
+                    </h5>
+                    <p class="card-text">
+                      <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                    </p>
+                    <a href="#" class="">$1000</a>
+                    <a href="#" class="" style="text-decoration: line-through"
+                      >$19,000</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <img
+                    src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/59/713347/1.jpg?3619"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fingerprint Touch Bluetooth Headset
+                    </h5>
+                    <p class="card-text">
+                      <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                    </p>
+                    <a href="#" class="">$1000</a>
+                    <a href="#" class="" style="text-decoration: line-through"
+                      >$19,000</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <img
+                    src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/59/713347/1.jpg?3619"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fingerprint Touch Bluetooth Headset
+                    </h5>
+                    <p class="card-text">
+                      <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                    </p>
+                    <a href="#" class="">$1000</a>
+                    <a href="#" class="" style="text-decoration: line-through"
+                      >$19,000</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card">
+                  <img
+                    src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/59/713347/1.jpg?3619"
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Fingerprint Touch Bluetooth Headset
+                    </h5>
+                    <p class="card-text">
+                      <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                    </p>
+                    <a href="#" class="">$1000</a>
+                    <a href="#" class="" style="text-decoration: line-through"
+                      >$19,000</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="swiper-slide">
-              <div class="topItem card">
-                <div class="img">
-                  <img src="./assets/imgs/R.jpg" alt="">
-                </div>
-                <div class="text"><b>111.67</b><span>$233</span></div>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="topItem card">
-                <div class="img">
-                  <img src="./assets/imgs/R.jpg" alt="">
-                </div>
-                <div class="text"><b>111.67</b><span>$233</span></div>
-              </div>
-            </div>
-            </div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
           </div>
         </div>
       </section>
-      <section class="flashSales">
-        <div class="swiper flashSale">
-          <div class="title">
-            <h2>Flash Sales <i class="fa fa-tag" aria-hidden="true"></i></h2>
-            <div class="countDown">11: 11:11</div>
-            <span><a href="#">View More <i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
-          </div>
-          <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+      <section class="flash mx-5 mt-5">
+        <div class="title">
+          <h2>Flash Sales <i class="fa fa-tags" aria-hidden="true"></i></h2>
+          <span class="countDown"><i>11</i>:<i>11</i>:<i>11</i></span>
+          <a href=""
+            >view all <i class="fa fa-caret-right" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="owl-carousel subSlide owl-theme">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/93/237687/1.jpg?3307"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/80/5442231/1.jpg?4064"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/19/676877/1.jpg?0691"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/59/713347/1.jpg?3619"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/80/541137/1.jpg?5199"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/17/246787/1.jpg?7984"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/07/297018/1.jpg?0339"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/80/5442231/1.jpg?4064"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/93/653238/1.jpg?0394"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/98/321284/1.jpg?4212"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/87/5167301/1.jpg?7673"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/45/2466311/1.jpg?3162"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <section class="productAround">
-        <div class="productGrid">
-          <div class="title">
-            <h2>Products Around You <i class="fa fa-tag" aria-hidden="true"></i></h2>
-            <h2 style="justify-self: flex-start !important;">Stores Around You <i class="fa fa-tag" aria-hidden="true"></i></h2>
-            <!-- <div class="countDown">11: 11:11</div> -->
-            <span><a href="#">View More <i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
+      <section class="stores mx-5 mt-5">
+        <div class="title">
+          <div class="nav">
+            <a href="">Products Around You</a><a href="">Stores Around You</a>
           </div>
-          <div class="gridWrapper">
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <a href=""
+            >view all <i class="fa fa-caret-right" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="owl-carousel subSlide owl-theme">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/93/237687/1.jpg?3307"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/80/5442231/1.jpg?4064"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.s67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/19/676877/1.jpg?0691"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/59/713347/1.jpg?3619"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/80/541137/1.jpg?5199"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/17/246787/1.jpg?7984"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/07/297018/1.jpg?0339"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/80/5442231/1.jpg?4064"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/93/653238/1.jpg?0394"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/98/321284/1.jpg?4212"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/87/5167301/1.jpg?7673"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/45/2466311/1.jpg?3162"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <section class="popularProduct">
-        <div class="popularGrid">
-          <div class="title">
-            <h2>Flash Sales <i class="fa fa-tag" aria-hidden="true"></i></h2>
-            <div class="countDown">11: 11:11</div>
-            <span><a href="#">View More <i class="fa fa-angle-right" aria-hidden="true"></i></a></span>
+      <section class="popular mx-5 mt-5">
+        <div class="title">
+          <div class="nav">
+            <a href="">Popular Products</a><a href="">Popular Stores</a>
           </div>
-          <div class="gridWrapper">
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <a href=""
+            >view all <i class="fa fa-caret-right" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="owl-carousel subSlide owl-theme">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/93/237687/1.jpg?3307"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/80/5442231/1.jpg?4064"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.s67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/19/676877/1.jpg?0691"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/59/713347/1.jpg?3619"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/80/541137/1.jpg?5199"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/17/246787/1.jpg?7984"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/07/297018/1.jpg?0339"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/80/5442231/1.jpg?4064"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/93/653238/1.jpg?0394"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
-          <div class="gridItem">
-            <div class="topItem card">
-              <div class="img">
-                <img src="./assets/imgs/R.jpg" alt="">
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/98/321284/1.jpg?4212"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
               </div>
-              <div class="text"><b>111.67</b><span>$233</span></div>
             </div>
           </div>
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/87/5167301/1.jpg?7673"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="card">
+              <img
+                src="https://ng.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/45/2466311/1.jpg?3162"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">Fingerprint Touch Bluetooth Headset</h5>
+                <p class="card-text">
+                  <i class="fa fa-star" aria-hidden="true"></i> 4.7
+                </p>
+                <a href="#" class="">$1000</a>
+                <a href="#" class="" style="text-decoration: line-through"
+                  >$19,000</a
+                >
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="./main.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      
-    </script>    
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./bootstrap/jquery.min.js"></script>
+    <script src="./bootstrap/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

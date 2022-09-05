@@ -1,121 +1,60 @@
-const sidebar = document.querySelector(".sidebar");
-const heroSlide = document.querySelector(".heroSlide");
-const sidemenuToggle = document.querySelector(".sidemenutoggle");
-const sidemenuText = document.querySelectorAll(".sidemenuText");
-sidemenuToggle.addEventListener("click", () => {
-  sidemenuText.forEach((text) => {
-    if (text.style.display == "none") {
-      text.style.display = "inline";
-      text.parentElement.style = "justify-content: start";
+const navBtn = document.querySelector(".navbar-toggler");
+const navBtnIcon = document.querySelector(".navbar-toggler i");
+const sidebar = document.querySelector(".side > div");
+const bb = document.querySelector("body");
+navBtn.addEventListener("click", () => {
+  colapseactive = navBtn.getAttribute("aria-expanded");
+  if (colapseactive == "true") {
+    navBtn.style = "position: absolute; left:75%;";
+    // navBtnIcon.removeAttribute("class");
+    navBtnIcon.setAttribute("class", "fa fa-x");
+  } else {
+    navBtnIcon.setAttribute("class", "fa fa-bars");
+    navBtn.style = "position: static; right: left;";
+  }
+});
 
-      sidebar.style = "flex: 1; min-width: 240; max-width: 250";
-    } else {
-      text.style.display = "none";
-      text.parentElement.style = "justify-content: center";
-      sidebar.style = "flex: ''; min-width: 0; max-width: 80px";
-    }
+// alert(sidebar.clientHeight)
+(() => {
+  "use strict";
+  const tooltipTriggerList = Array.from(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  tooltipTriggerList.forEach((tooltipTriggerEl) => {
+    new bootstrap.Tooltip(tooltipTriggerEl);
   });
-});
+})();
 
-setInterval(() => {
-  let bodyWidth = document.body.clientWidth;
-  const checkBodyWidth = (() => {
-    sidemenuText.forEach((text) => {
-      if (bodyWidth <= 768) {
-        text.style.display = "none";
-        text.parentElement.style = "justify-content: center";
-        sidebar.style = "flex: ''; min-width: 0; max-width: 80px";
-        // heroSlide.style = "height: 40px";
-      } else {
-        text.style.display = "inline";
-        text.parentElement.style = "justify-content: start";
-        sidebar.style = "flex: 1; min-width: 240; max-width: 250";
-      }
-    });
-  })();
-}, 500);
-
-///Swiper Settings😎
-const swiper = new Swiper(".heroslide", {
-  slidesPerView: "auto",
-  spaceBetween: 30,
-  freeMode: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  autoplay: true,
+$(".owl-carousel").owlCarousel({
   loop: true,
+  margin: 10,
+  nav: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+    },
+  },
 });
+$(".carousel .carousel-item").each(function () {
+  var minPerSlide = 4;
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(":first");
+  }
+  next.children(":first-child").clone().appendTo($(this));
 
-////Top selling slide Config
-const swiper1 = new Swiper(".topselling", {
-  slidesPerView: 4,
-  spaceBetween: 30,
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    // when window width is >= 640px
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-  },
-  freeMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  loop: true,
-  autoplay: true,
-});
+  for (var i = 0; i < minPerSlide; i++) {
+    next = next.next();
+    if (!next.length) {
+      next = $(this).siblings(":first");
+    }
 
-////Flash Sale SLide COnfig
-const swiper3 = new Swiper(".flashSale", {
-  slidesPerView: 5,
-  spaceBetween: 30,
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 2,
-      spaceBetween: 30,
-    },
-    // when window width is >= 640px
-    768: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 5,
-      spaceBetween: 20,
-    },
-  },
-  freeMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  loop: true,
-  autoplay: true,
+    next.children(":first-child").clone().appendTo($(this));
+  }
 });
